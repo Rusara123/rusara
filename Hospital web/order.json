@@ -1,0 +1,40 @@
+{
+  "analgesics": [
+    { "name": "Paracetamol", "price": 3, "image": "/tablets.jpg" },
+    { "name": "Ibuprofen", "price": 5, "image": "/tablets.jpg" },
+    { "name": "Aspirin", "price": 4, "image": "/tablets.jpg" },
+    { "name": "Naproxen", "price": 6, "image": "/tablets.jpg" },
+    { "name": "Codeine", "price": 8, "image": "/tablets.jpg" },
+    { "name": "Morphine", "price": 10, "image": "/tablets.jpg" }
+  ],
+  "antibiotics": [
+    { "name": "Amoxicillin", "price": 7, "image": "/tablets.jpg" },
+    { "name": "Ciprofloxacin", "price": 8, "image": "/tablets.jpg" },
+    { "name": "Doxycycline", "price": 6, "image": "/tablets.jpg" },
+    { "name": "Clindamycin", "price": 9, "image": "/tablets.jpg" },
+    { "name": "Erythromycin", "price": 7, "image": "/tablets.jpg" },
+    { "name": "Azithromycin", "price": 8, "image": "/tablets.jpg" }
+  ],
+  "antidepressants": [
+    { "name": "Sertraline", "price": 12, "image": "/tablets.jpg" },
+    { "name": "Fluoxetine", "price": 10, "image": "/tablets.jpg" },
+    { "name": "Citalopram", "price": 11, "image": "/tablets.jpg" },
+    { "name": "Paroxetine", "price": 13, "image": "/tablets.jpg" },
+    { "name": "Venlafaxine", "price": 15, "image": "/tablets.jpg" },
+    { "name": "Amitriptyline", "price": 10, "image": "/tablets.jpg" }
+  ],
+  "antihistamines": [
+    { "name": "Loratadine", "price": 5, "image": "/tablets.jpg" },
+    { "name": "Cetirizine", "price": 4, "image": "/tablets.jpg" },
+    { "name": "Fexofenadine", "price": 6, "image": "/tablets.jpg" },
+    { "name": "Diphenhydramine", "price": 3, "image": "/tablets.jpg" }
+  ],
+  "antihypertensives": [
+    { "name": "Atenolol", "price": 8, "image": "/tablets.jpg" },
+    { "name": "Losartan", "price": 10, "image": "/tablets.jpg" },
+    { "name": "Lisinopril", "price": 9, "image": "/tablets.jpg" },
+    { "name": "Metoprolol", "price": 11, "image": "/tablets.jpg" },
+    { "name": "Valsartan", "price": 12, "image": "/tablets.jpg" },
+    { "name": "Clonidine", "price": 7, "image": "/tablets.jpg" }
+  ]
+}

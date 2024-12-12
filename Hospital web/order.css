@@ -1,0 +1,276 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e2a47;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Category Section */
+.category-section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3498db;
+}
+
+/* Medicine Category */
+.medicine-category {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.medicine-box {
+  background-color: #2c3e50;
+  border-radius: 12px;
+  margin: 15px;
+  padding: 25px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.medicine-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.medicine-box img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.medicine-box h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+.medicine-box p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #95a5a6;
+}
+
+.medicine-box input {
+  width: 100px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.medicine-box button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.medicine-box button:hover {
+  background-color: #2980b9;
+}
+
+/* Cart Section */
+.cart {
+  margin-top: 50px;
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart th, .cart td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+}
+
+.cart th {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+.cart td {
+  background-color: #1e2a47;
+  color: #bdc3c7;
+}
+
+.cart td p {
+  font-size: 1.1em;
+}
+
+/* Buttons */
+button {
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.favorites {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .medicine-category {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medicine-box {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  button {
+    font-size: 1.1em;
+  }
+}
+
+footer {
+  background: #333;
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  width: 80%;
+  margin: auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.footer-col {
+  flex: 1;
+  margin: 15px;
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-col p,
+.footer-col ul {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #f44336;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #ffffff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f44336;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+      flex-direction: column;
+      text-align: left;
+  }
+
+  .footer-col {
+      margin: 20px 0;
+  }
+}

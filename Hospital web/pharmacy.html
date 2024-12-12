@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Hospital website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
+
+    </head>
+    <body>
+        <section class="sub-header2">
+            <nav> 
+                <a href="home.html"><img src="image/logo1.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="pharmacy.html">Pharmacy</a></li>
+                        <li><a href="registation.html">Registation</a></li>
+                        <li><a href="consulting.html">Consult</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                
+            </nav>
+            <h1><i>PHARMACY</i></h1>
+        </section>
+
+        <!-- Pharmacy Introduction -->
+<section class="pharmacy-intro">
+    
+    <br>
+    <div class="content-wrapper">
+        <p>Located on the 2nd floor in the OPD area, Horizon Health Hospital Pharmacy offers a comprehensive range of medications and medical devices for treating various conditions, including Eye and ENT issues. Our on-site pharmacy provides the convenience of obtaining prescribed medications immediately after your doctor's visit, saving you time and effort compared to visiting outside pharmacies. We adhere to strict international storage standards to ensure the highest quality of all pharmaceutical products. Our qualified pharmacy staff is always available to provide accurate and up-to-date information, helping you take your treatments safely and effectively.</p>
+        <img src="image/pha1.jpg" alt="Pharmacy">
+    </div>
+</section>
+<br> <br> <br>
+
+<!-- Pharmacy Form Section -->
+<section class="pharmacy-form">
+    <h1>Buy Medicine from Our Pharmacy</h1>
+    <p>Please fill out the form below to order your medicines from Horizon Health Hospital Pharmacy.</p>
+    
+    
+    <form action="pharmacy.html" method="POST">
+        <div class="form-group">
+            <label for="customerName">Full Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="customerEmail">Email:</label>
+            <input type="email" id="customerEmail" name="customerEmail" required>
+        </div>
+
+        <div class="form-group">
+            <label for="customerPhone">Phone Number:</label>
+            <input type="tel" id="customerPhone" name="customerPhone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="medicineSelect">Select Medicine:</label>
+            <select id="medicineSelect" name="medicineSelect" required>
+                <option value="">--Select Medicine--</option>
+                <option value="Paracetamol">Paracetamol</option>
+                <option value="Ibuprofen">Ibuprofen</option>
+                <option value="Amoxicillin">Amoxicillin</option>
+                <option value="Cough Syrup">Cough Syrup</option>
+                <option value="Vitamin C">Vitamin C</option>
+                <option value="Antacid Tablets">Antacid Tablets</option>
+                <option value="Antibiotic Ointment">Antibiotic Ointment</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="medicineName">Medicine Name:</label>
+            <input type="text" id="medicineName" name="medicineName" placeholder="Enter the name of the medicine" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="deliveryAddress">Delivery Address:</label>
+            <textarea id="deliveryAddress" name="deliveryAddress" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Place Order</button>
+        </div>
+    </form>
+</section>
+
+
+<br><br><br><br><br><br><br>
+
+
+<!------ footer------>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-row">
+            <!-- About Section -->
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>Horizon Health Hospital is committed to providing high-quality healthcare with compassion and excellence.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="registation.html">Registration</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Phone: +123 456 7890</li>
+                    <li>Email: info@horizonhealth.com</li>
+                    <li>Address: 123 Health St, Wellness City</li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Horizon Health Hospital. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    </body>
+</html>
+        

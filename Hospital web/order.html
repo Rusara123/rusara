@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Order Page</title>
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the horizonhealth Medicine Order Page</h1>
+
+      <div class="category-section">
+        <h2>Analgesics</h2>
+        <div class="medicine-category" id="analgesics"></div>
+      </div>
+
+      <div class="category-section">
+        <h2>Antibiotics</h2>
+        <div class="medicine-category" id="antibiotics"></div>
+      </div>
+
+      <div class="category-section">
+        <h2>Antidepressants</h2>
+        <div class="medicine-category" id="antidepressants"></div>
+      </div>
+
+      <div class="category-section">
+        <h2>Antihistamines</h2>
+        <div class="medicine-category" id="antihistamines"></div>
+      </div>
+
+      <div class="category-section">
+        <h2>Antihypertensives</h2>
+        <div class="medicine-category" id="antihypertensives"></div>
+      </div>
+
+      <!-- Cart Section -->
+      <div class="cart">
+        <h2>Current Items</h2>
+        <table id="cartTable">
+          <thead>
+            <tr>
+              <th>Medicine</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p>Total Price: <span id="totalPrice">0</span></p>
+        <button id="buyNowBtn">Buy Now</button>
+      </div>
+      <div class="favorites">
+        <button id="addToFavoritesBtn">Add to Favorites</button>
+        <button id="applyFavoritesBtn">Apply Favorites</button>
+      </div>
+    </div>
+
+    <script src="order.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>About Us</h4>
+            <p>
+              Horizon Health Hospital is committed to providing high-quality
+              healthcare with compassion and excellence.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="doctors.html">Doctors</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="registation.html">Registration</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>Phone: +123 456 7890</li>
+              <li>Email: info@horizonhealth.com</li>
+              <li>Address: 123 Health St, Wellness City</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Horizon Health Hospital. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

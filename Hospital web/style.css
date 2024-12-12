@@ -1,0 +1,974 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/back.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+nav img{
+    height: 100px;
+    width: 100px;
+    border-radius: 70px;
+    border: 4px solid rgb(0, 217, 255);
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;  
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family:Georgia ;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 65px;
+    font-family: Georgia;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+    font-family: Georgia;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    font-family: Georgia;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding-top: 100px;
+}
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+.about img {
+    width: 50%; 
+    height: auto;
+    margin: 0 auto; 
+    display: block; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.services{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding-top: 100px;
+}
+.row {
+    display: flex;
+  }
+  
+.services-col {
+    flex: 50%;
+    padding: 5px;
+    float: left;
+    
+  }
+  
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.services-col  img{
+    border: 4px solid #000000;
+}
+
+.services-col img:hover{
+    transform: scaleX(-1);
+}
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.services p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+
+.services ul, ol {
+    margin: 20px 0;
+    padding-left: 300px;
+}
+
+.services ul li, ol li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+    
+}
+
+
+
+@media (max-width: 768px) {
+    nav .fa {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #333;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        transition: 0.5s;
+        z-index: 2;
+    }
+
+    .nav-links ul {
+        padding: 50px;
+    }
+
+    .nav-links ul li {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .text-box h1 {
+        font-size: 40px;
+    }
+
+    .text-box p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
+
+/*-------footer--------*/
+
+footer {
+    background: #333;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.footer-col {
+    flex: 1;
+    margin: 15px;
+    min-width: 200px;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-col p,
+.footer-col ul {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #f44336;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f44336;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-col {
+        margin: 20px 0;
+    }
+}
+
+
+/*--------SERVICES PAGE--------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/services1.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+
+.sub-header h1{
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: Georgia;
+}
+
+
+
+.services-intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-intro h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services-intro p {
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 800px; 
+    line-height: 1.6;
+    color: #555;
+}
+
+.services-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background-color: #8cdbff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.service-item h3 {
+    margin: 15px 0;
+    color: #000000;
+}
+
+.service-item p {
+    padding: 0 15px 15px;
+    color: #323232;
+    font-size: 16px;
+}
+
+
+
+.registration-link {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #12d4ff;
+}
+
+.registration-link h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.registration-link p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.hero-btn1 {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #f44336;
+    padding: 12px 34px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.hero-btn1:hover {
+    background-color: #6ff70d;
+    color: black;
+}
+
+/*-------------DOCTORS PAGE--------------------*/
+
+.sub-header1{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/doctors.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+
+.sub-header1 h1{
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: Georgia;
+}
+.doctors-intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.doctors-intro h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.doctors-intro p {
+    font-size: 26px;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #6bcbf1;
+}
+
+.doctor-card {
+    background: #ffffff;
+    border: 4px solid #aeaaaa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: scale(1.05);
+}
+
+.doctor-card img {
+    width: 80%;
+    height: auto;
+    border-radius: 50px;
+    border: 2px solid rgb(121, 125, 125);
+   
+}
+
+.doctor-card h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.doctor-card p {
+    padding: 0 15px 15px;
+    color: #666;
+    font-size: 16px;
+}
+
+/*------------------------------PHARMACY PAGE-------------------------------*/
+.sub-header2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/pharmacy.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+.sub-header2 h1{
+font-size: 60px;
+font-family: Georgia;
+margin-top: 50px;
+}
+
+.pharmacy-intro {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto; 
+}
+
+.pharmacy-intro h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.pharmacy-intro .content-wrapper {
+    display: flex;
+    align-items: flex-start; 
+    gap: 100px; 
+}
+
+.pharmacy-intro p {
+    flex: 1;
+    text-align: justify; 
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    line-height: 1.6;
+}
+
+.pharmacy-intro img {
+    width: 470px; 
+    height: auto;
+    flex-shrink: 0; 
+    border-radius: 15px;
+    border: 2px solid black;
+    object-fit: cover; 
+    
+}
+
+
+.pharmacy-form {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #93eaee;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pharmacy-form h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pharmacy-form p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #403a3a;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d32f2f;
+}
+
+/*---------------------------------------REGISTATION PAGE-----------------------------------*/
+
+.sub-header3{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/REGI.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+.sub-header3 h1{
+font-size: 60px;
+margin-top: 50px;
+font-family: Georgia;
+}
+
+.registration {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #12fffb;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 40px;
+}
+
+.registration p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #413b3b;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f92323;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #2eed37;
+    color: #000000;
+}
+
+/*---------------------------------------CONSULT PAGE-----------------------------------*/
+
+.sub-header4{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/CONSLUT.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+.sub-header4 h1{
+font-size: 60px;
+margin-top: 50px;
+font-family: Georgia;
+}
+
+
+#consulting-intro {
+    padding: 2rem;
+    background-color: #f9f9f9; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto; 
+    align-items: center;
+    border: 1px solid #e0e0e0; 
+    border-radius: 15px; 
+    padding: 1.5rem;
+    background-color: #77d6fc; 
+}
+
+
+.image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%; 
+    border-radius: 8px; 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); 
+}
+
+
+.details {
+    flex: 2 1 500px; 
+    padding: 1rem;
+}
+
+.details h2 {
+    font-size: 1.75rem; 
+    color: #000000; 
+    margin-bottom: 1rem; 
+}
+
+
+.details p {
+    color: #302d2d;
+    line-height: 1.6; 
+    margin-bottom: 1rem; 
+}
+.details ul {
+    list-style: disc inside; 
+    margin-bottom: 1rem; 
+}
+
+.details li {
+    margin-bottom: 0.5rem; 
+}
+
+.consulting-reservation {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #79cace;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.consulting-reservation h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 30px;
+}
+
+.consulting-reservation p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #242121;
+    font-size: 19px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .details {
+        padding: 1rem 0; 
+    }
+}
+
+/*---------------------------------------ABOUT US PAGE-----------------------------------------*/
+
+.sub-header5{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/ABOUT.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header5 h1{
+    font-size: 60px;
+    margin-top: 50px;
+    font-family: Georgia;
+}
+
+.about-us {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.branches {
+    margin-bottom: 40px;
+}
+
+.branches h2{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.branch {
+    margin-bottom: 30px;
+}
+
+.branch h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.branch img {
+    width: 60%;
+    padding-left: 210px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.branch p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.hospital-summary {
+    margin-top: 40px;
+}
+
+.hospital-summary h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #5b2afb;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #22b0ed;
+}
+
+tfoot {
+    background-color: #bae0f9;
+    font-weight: bold;
+}
+
+tfoot td {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .map iframe {
+        height: 200px;
+    }
+}
